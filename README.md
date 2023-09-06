@@ -17,3 +17,9 @@ Salut le YnSNotif est un script de notification modifiable.
 [![youtube](https://camo.githubusercontent.com/165da3cf9ab80bd8395e6de8c28077d68982319c6ecf871f6f54443c68886840/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f596f75547562652d2532334646303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d596f7554756265266c6f676f436f6c6f723d7768697465)]([https://www.youtube.com/channel/UCnv294eFDcFk8v2hln-VUsQ](https://www.youtube.com/channel/UCIW5VUoctU-ejmJhOWueOUA))
 [![twitch](https://camo.githubusercontent.com/a72e6918af7634e5e80a0b8313ffc32c1f82075a5d1bf10f4b97bdf21daa548a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7477697463682d2532333931343646462e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d547769746368266c6f676f436f6c6f723d7768697465)]([https://www.twitch.tv/dzdraazox](https://www.twitch.tv/yns_devv))
 
+Préview : 
+
+https://youtu.be/JhZp3wl3vKc
+
+![minia](https://github.com/YnSDev78/YnSNotif/assets/68571587/475c65f9-e04a-43e5-9fbf-4b9e024812f5)
+
