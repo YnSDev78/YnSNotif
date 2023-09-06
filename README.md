@@ -1,41 +1,19 @@
-# YnSNotif
-Notification UI FiveM type FlashBack FA
+# YnSDev: https://discord.gg/kbXZe6GNTv
 
-Mofification ES.EXTENDED : 
-es_extended/client/fxmanifest.lua:
+## Présentation
 
-function ESX.ShowNotification(msg, couleurProgress)
-    exports.notif:Send(msg, couleurProgress)
-end
+Salut le YnSNotif est un script de notification modifiable.
 
+# Les langages que j'ai utilisés
 
-function ESX.ShowAdvancedNotification(title, subject, msg, couleurProgress, banner, timeout, icon)
-    exports.notif:SendAdvanced(msg, subject, title, couleurProgress, banner, nil, nil, true, nil, icon)
-end
+[![html](https://camo.githubusercontent.com/49fbb99f92674cc6825349b154b65aaf4064aec465d61e8e1f9fb99da3d922a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d2532334533344632362e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465)](https://developer.mozilla.org/fr/docs/Web/HTML) 
+[![css](https://camo.githubusercontent.com/e6b67b27998fca3bccf4c0ee479fc8f9de09d91f389cccfbe6cb1e29c10cfbd7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f637373332d2532333135373242362e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465)](https://developer.mozilla.org/fr/docs/Web/CSS)
+[![js](https://camo.githubusercontent.com/aeddc848275a1ffce386dc81c04541654ca07b2c43bbb8ad251085c962672aea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d2532333332333333302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d253233463744463145)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+[![lua](https://camo.githubusercontent.com/18d07ed577dd8860b7d3000e4e17d5ac7a042c02cfdd7fcec19873e5340d25b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c75612d2532333243324437322e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6c7561266c6f676f436f6c6f723d7768697465)](http://www.lua.org)
 
-function ESX.ShowHelpNotification(msg)
-	AddTextEntry('esxHelpNotification', msg)
-	BeginTextCommandDisplayHelp('esxHelpNotification')
-	EndTextCommandDisplayHelp(0, false, true, -1)
-end
+# Network
 
-Type de notification : 
+[![discord](https://camo.githubusercontent.com/9a04246df38f73327b330dc71d3717e44a48e4495d5b88442942bd9e6b03cebb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d2532333732383944412e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465)](https://discord.gg/kbXZe6GNTv)
+[![youtube](https://camo.githubusercontent.com/165da3cf9ab80bd8395e6de8c28077d68982319c6ecf871f6f54443c68886840/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f596f75547562652d2532334646303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d596f7554756265266c6f676f436f6c6f723d7768697465)]([https://www.youtube.com/channel/UCnv294eFDcFk8v2hln-VUsQ](https://www.youtube.com/channel/UCIW5VUoctU-ejmJhOWueOUA))
+[![twitch](https://camo.githubusercontent.com/a72e6918af7634e5e80a0b8313ffc32c1f82075a5d1bf10f4b97bdf21daa548a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7477697463682d2532333931343646462e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d547769746368266c6f676f436f6c6f723d7768697465)]([https://www.twitch.tv/dzdraazox](https://www.twitch.tv/yns_devv))
 
-client : 
-RegisterCommand('2', function()
-    ESX.ShowNotification("Le Los Santos Custom est ~g~ouvert", "#5fa05d")
-end)
-
-RegisterCommand('3', function()
-    ESX.ShowNotification("Le Los Santos Custom est ~r~fermer", "#FF0000")
-end)
-
-RegisterCommand('1', function()
-	ESX.ShowAdvancedNotification('~p~Appel d\'urgence - 2061', '~p~Central', "~p~Localisation:~s~\n<b><span style='font-weight: 500;'>Groove Street (15m)</span></b>\n~p~Infos:~s~\n<b><span style='font-weight: 500'>Tire à feux</span></b>", '#b19bd9', 'call', 7)
-end)
-
-server : 
-
-RegisterCommand('3', function()
-    TriggerClientEvent('esx:showNotification', _src, "Le Los Santos Custom est ~r~fermer", "#FF0000")
-end)
